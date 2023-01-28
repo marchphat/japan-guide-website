@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful of Japan</title>
+  <link rel="icon" href="../img/title_logo.avif" type="image/x-icon" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/global.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <!-- Header Start -->
+  <header class="header p-3 position-absolute start-0 top-0 end-0">
+    <div class="d-flex fixed-top justify-content-between align-items-center px-5 navbar-expand-md"
+      style="height: 100px; background-color: #101224;">
+      <a href="/" class="text-decoration-none text-white fs-1 fw-bold">VTOUR</a>
+
+      <div>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-between fs-5" style="width: 450px; height: 100%">
+            <li class="nav-item">
+              <a class="nav-link text-white point__nav-link" href="/" style="--pointer-color: white">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold point__nav-link" href="/destinations"
+                style="--pointer-color: white">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white point__nav-link" href="/interests"
+                style="--pointer-color: white">Interests</a>
+            </li>
+            <li class="nav-item">
+              <img src="../img/vertical_line.png" alt="" style="height: 45px; width: 45px" />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/log-out"><i class="bi bi-arrow-right-circle-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <!-- Flyout Navigation Start -->
+  <nav class="collapse navbar-collapse dropdown-nav" id="navbar">
+    <div class="dropdown-nav__container container-xxl d-flex align-items-center">
+      <div class="row align-items-start">
+        <div class="col-12">
+          <a href="/" class="row text-decoration-none">
+            <h1 class="display-4 text-white">Home</h1>
+          </a>
+        </div>
+        <div class="col-12 mt-4">
+          <a href="/destinations" class="row text-decoration-none">
+            <h1 class="display-4 text-white">Destinations</h1>
+          </a>
+        </div>
+        <div class="col-12 mt-4">
+          <a href="/interests" class="row text-decoration-none">
+            <h1 class="display-4 text-white">Interests</h1>
+          </a>
+        </div>
+        <div class="col-12 mt-4">
+          <a href="/log-out" class="row text-decoration-none">
+            <h1 class="display-4 text-white">Sign Out</h1>
+          </a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler dropdown-nav__closeNavBtn" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-x"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <!-- Flyout Navigation End -->
+
+  <!-- Destinations Start -->
+  <div class="container-fluid" style="padding: 130px 3rem 0 3rem">
+    <div class="my-4">
+      <h1 class="hero__heading fw-bold" style="color: gray">
+        Top destinations <span style="color: red">in</span> Japan
+      </h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-5">
+
+      <div class="col">
+        <a href="/tokyo" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="../img/tokyo_thumbnail.jpg" class="card-img-top w-100 h-100" style="object-fit: cover;"
+              alt="tokyo" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Tokyo</h5>
+              <p class="card-text">Japan's capital and largest city.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/kyoto" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="../img/kyoto_thumbnail.jpg" class="card-img-top w-100 h-100" style="object-fit: cover;"
+              alt="kyoto" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Kyoto</h5>
+              <p class="card-text">For over 1000 years the capital of Japan.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/osaka" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="../img/osaka_thumbnail.jpg" class="card-img-top w-100 h-100" style="object-fit: cover;"
+              alt="osaka" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Osaka</h5>
+              <p class="card-text">Largest city of the Kinki Region.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/nara" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="../img/nara_thumbnail.jpg" class="card-img-top w-100 h-100" style="object-fit: cover;" alt="Nara" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Nara</h5>
+              <p class="card-text">Japan's first permanent capital.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/fuji" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="../img/fuji_thumbnail.jpg" class="card-img-top w-100 h-100" style="object-fit: cover;"
+              alt="mount fuji" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Mount Fuji</h5>
+              <p class="card-text">The country's most iconic landmark.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="/hiroshima" class="text-decoration-none">
+          <div class="card h-100">
+            <img src="../img/hiroshima_thumbnail.jpg" class="card-img-top w-100 h-100" style="object-fit: cover;"
+              alt="hiroshima" />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Hiroshima</h5>
+              <p class="card-text">Regional capital with a tragic history.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Destinations End -->
+
+</body>
+
+</html>

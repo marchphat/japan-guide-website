@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #000000;
+  --primary-color-highlight: #233d54;
+  --bs-body-bg: #ffffff;
+  --bs-body-font-family: "Montserrat", sans-serif;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: transitionIn 0.75s;
+}
+
+a {
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Custom Container  */
+.container-custom {
+  width: 100%;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container-custom {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-custom {
+    width: 1340px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-custom {
+    width: 1520px;
+  }
+}
+
+/* Main Header */
+.header {
+  z-index: 2;
+}
+
+/* Flyout Navigation Bar */
+#navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.916);
+  z-index: 4;
+}
+
+.dropdown-nav__closeNavBtn {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  color: #ffffff;
+}
+
+.dropdown-nav__container {
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  #navbar {
+    display: none;
+  }
+}
+
+.point__nav-link:after {
+  content: "";
+  display: block;
+  background-color: var(--pointer-color);
+  height: 2px;
+  width: 0;
+  transition: 200ms ease-in-out;
+}
+
+.point__nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+/* Scroll Button */
+.hero__scroll-btn .bi {
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Steps Section */
+.steps {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.steps__section-thumbnail {
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.steps__content-width {
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.steps--background {
+  background-color: #FEF8F9;
+}
+
+@media (min-width: 544px) {
+  .steps {
+      padding-top: 80px;
+      padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail {
+      height: auto;
+  }
+}

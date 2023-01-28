@@ -1,0 +1,42 @@
+/* Filter */
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    color: gray;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+    border-radius: 3em;
+}
+
+ul.filters > li.active > a{
+    color: #fff;
+    background-color: red;
+    border-radius: 3em;
+}
+
+/* Image Gallery */
+.image-container {
+  height: 400px;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.image-container:hover {
+  filter: grayscale(1) brightness(0.5);
+}
